@@ -1,5 +1,6 @@
 const SUFFIX_AGO = 'ago';
 const SUFFIX_FROM_NOW = 'from now';
+
 const UNITS = [
   {
     key: 'year',
@@ -33,6 +34,20 @@ const UNITS = [
   },
 ];
 
+function getUnitByName(unitName) {
+  let unit;
+
+  for (let i = 0; i <= UNITS.length; i++) {
+    unit = UNITS[i];
+
+    if (unit.key === unitName) {
+      return unit;
+    }
+  }
+
+  return undefined;
+}
+
 const REGEXP = new RegExp(
   `^([0-9]+)\\s(${UNITS.map(unit => unit.key).join('|')})s?\\s(${SUFFIX_AGO}|${SUFFIX_FROM_NOW})$`
 );
@@ -47,9 +62,9 @@ function parser(input) {
       result = new Date();
 
       if (matches) {
-        const [, amount, kind, suffix] = matches;
+        const [, amount, unitName, suffix] = matches;
 
-        const { setter, getter } = UNITS.filter(u => u.key === kind)[0];
+        const { setter, getter } = getUnitByName(unitName);
 
         if (suffix === SUFFIX_AGO) {
           result[setter](result[getter]() - parseInt(amount, 10));
