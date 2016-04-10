@@ -3,19 +3,16 @@
     "defaults/configurations/airbnb/es6"
   ],
   "env": {
-    "node": true
+    
   },
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
   },
   "rules": {
-    "func-names": 0,
-    "one-var": 0,
-    "no-console": 0,
     "keyword-spacing": 0
   },
   "globals": {
-    "angular": 0
+
   }
 }

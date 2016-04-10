@@ -4,3 +4,4 @@ test/
 .eslintignore
 .eslintrc.json
 .gitignore
+.npmignore
