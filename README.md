@@ -1,9 +1,9 @@
 relative-to-date
 =================
 
-Converts relative time strings (like "2 years ago" or "10 months from now") to javascript date objects.
+Converts relative time strings (like ```'2 years ago'``` or ```'10 months from now'```) to javascript date objects.
 
-This module was conceived to pass date options to libraries, such as "ageLimit: '18 year ago'" or "maxExpireDate: '10 year from now'", so only works with english strings and it's not in my plans to make it work with other languages. However, feel free to code it and make a pull request if you need it.  
+This module was conceived to pass date options to libraries, such as ```{ ageLimit: '18 year ago'``` } or ```{ maxExpireDate: '10 year from now' }```, so only works with english strings and it's not in my plans to make it work with other languages since I want to keep it simple.
 
 Valid values are:
 ```
@@ -13,7 +13,7 @@ Valid values are:
 and
 ```now``` which it's a wildcard equivalent to ```new Date()```
 
-Notice that only works when it's a unmistakable value and it's actually possible to revert it. For example, "about a month ago" or "less than a minute ago" are impossible values to be reverted to an accurate date.
+Notice that only works when it's a unmistakable value and it's actually possible to revert it. For example, ```'about a month ago'``` or ```'less than a minute ago'``` are impossible values to be reverted to an accurate date.
 
 Install
 -------
