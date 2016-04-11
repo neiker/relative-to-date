@@ -3,34 +3,39 @@ const SUFFIX_FROM_NOW = 'from now';
 
 const UNITS = [
   {
-    key: 'year',
-    getter: 'getUTCFullYear',
-    setter: 'setYear',
+    name: 'year',
+    getter: date => date.getUTCFullYear(),
+    setter: (date, value) => date.setYear(value),
   },
   {
-    key: 'month',
-    getter: 'getMonth',
-    setter: 'setMonth',
+    name: 'month',
+    getter: date => date.getMonth(),
+    setter: (date, value) => date.setMonth(value),
   },
   {
-    key: 'day',
-    getter: 'getDate',
-    setter: 'setDate',
+    name: 'week',
+    getter: date => date.getDate() / 7,
+    setter: (date, value) => date.setDate(value * 7),
   },
   {
-    key: 'hour',
-    getter: 'getHours',
-    setter: 'setHours',
+    name: 'day',
+    getter: date => date.getDate(),
+    setter: (date, value) => date.setDate(value),
   },
   {
-    key: 'minute',
-    getter: 'getMinutes',
-    setter: 'setMinutes',
+    name: 'hour',
+    getter: date => date.getHours(),
+    setter: (date, value) => date.setHours(value),
   },
   {
-    key: 'second',
-    getter: 'getSeconds',
-    setter: 'setSeconds',
+    name: 'minute',
+    getter: date => date.getMinutes(),
+    setter: (date, value) => date.setMinutes(value),
+  },
+  {
+    name: 'second',
+    getter: date => date.getSeconds(),
+    setter: (date, value) => date.setSeconds(value),
   },
 ];
 
@@ -40,7 +45,7 @@ function getUnitByName(unitName) {
   for (let i = 0; i <= UNITS.length; i++) {
     unit = UNITS[i];
 
-    if (unit.key === unitName) {
+    if (unit.name === unitName) {
       return unit;
     }
   }
@@ -49,38 +54,44 @@ function getUnitByName(unitName) {
 }
 
 const REGEXP = new RegExp(
-  `^([0-9]+)\\s(${UNITS.map(unit => unit.key).join('|')})s?\\s(${SUFFIX_AGO}|${SUFFIX_FROM_NOW})$`
+  `^([0-9]+)\\s(${UNITS.map(unit => unit.name).join('|')})s?\\s(${SUFFIX_AGO}|${SUFFIX_FROM_NOW})$`
 );
 
 function parser(input) {
-  let result;
+  let date;
 
   if (input) {
-    const matches = input.match(REGEXP);
-
-    if (input === 'now' || matches) {
-      result = new Date();
+    if (input === 'now') {
+      date = new Date();
+    } else {
+      const matches = input.match(REGEXP);
 
       if (matches) {
+        date = new Date();
+
         const [, amount, unitName, suffix] = matches;
 
-        const { setter, getter } = getUnitByName(unitName);
+        const { getter, setter } = getUnitByName(unitName);
 
+        const currentValue = getter(date);
+
+        let newValue;
         if (suffix === SUFFIX_AGO) {
-          result[setter](result[getter]() - parseInt(amount, 10));
+          newValue = currentValue - parseInt(amount, 10);
         } else {
-          result[setter](result[getter]() + parseInt(amount, 10));
+          newValue = currentValue + parseInt(amount, 10);
         }
+
+        setter(date, newValue);
       }
     }
   }
 
-  if (!result) {
+  if (!date) {
     throw new Error(`'${input}' it's an invalid date`);
   }
 
-  return result;
+  return date;
 }
-
 
 export default parser;

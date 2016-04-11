@@ -7,7 +7,7 @@ This module was conceived to pass date options to libraries, such as ```{ ageLim
 
 Valid values are:
 ```
-(0-9)+ (year|month|day|hour|minute|second)s? (ago|from now)
+(0-9)+ (year|month|week|day|hour|minute|second)s? (ago|from now)
 ```
 
 and

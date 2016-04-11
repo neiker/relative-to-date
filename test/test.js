@@ -35,6 +35,15 @@ describe('#relativeToDate()', () => {
       assert.equal(actual.toString(), expected.toString());
     });
 
+    it('should return a 7 weeks ago Date', () => {
+      const expected = new Date();
+      expected.setDate(expected.getDate() - 49);
+
+      const actual = relativeToDate('7 weeks ago');
+
+      assert.equal(actual.toString(), expected.toString());
+    });
+
     it('should return a 193 days ago Date', () => {
       const expected = new Date();
       expected.setDate(expected.getDate() - 193);
@@ -106,6 +115,15 @@ describe('#relativeToDate()', () => {
       expected.setMonth(expected.getMonth() + 15);
 
       const actual = relativeToDate('15 months from now');
+
+      assert.equal(actual.toString(), expected.toString());
+    });
+
+    it('should return a 12 weeks from now Date', () => {
+      const expected = new Date();
+      expected.setDate(expected.getDate() + 84);
+
+      const actual = relativeToDate('12 weeks from now');
 
       assert.equal(actual.toString(), expected.toString());
     });
