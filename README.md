@@ -42,6 +42,11 @@ Contributing
 --------
 If you have any suggestion or improvement, feel free to make a pull request with your changes or contact me on twitter ([@neiker](http://twitter.com/neiker)) if you have a great idea but you are too lazy to code it.
 
+Changelog
+----------
+* **v0.0.2**: Performance improvements and 'week' as new time unit available.
+* **v0.0.1**: First version
+
 License
 -------
 
