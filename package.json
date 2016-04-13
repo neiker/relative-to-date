@@ -1,6 +1,6 @@
 {
   "name": "relative-to-date",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Converts relative time strings to date objects",
   "main": "lib/index.js",
   "scripts": {
