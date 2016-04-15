@@ -2,6 +2,14 @@
   "name": "relative-to-date",
   "version": "0.0.2",
   "description": "Converts relative time strings to date objects",
+  "keywords": [
+    "date",
+    "timeago",
+    "time ago",
+    "relative time",
+    "parser",
+    "from now"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
