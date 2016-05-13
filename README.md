@@ -17,9 +17,16 @@ Notice that only works when it's a unmistakable value and it's actually possible
 
 Install
 -------
+Using npm:
 
 ```
 npm install relative-to-date --save
+```
+
+Using bower:
+
+```
+bower install relative-to-date=https://npmcdn.com/relative-to-date/lib/index.js --save
 ```
 
 
