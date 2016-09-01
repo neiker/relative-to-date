@@ -26,7 +26,7 @@ npm install relative-to-date --save
 Using bower:
 
 ```
-bower install relative-to-date=https://npmcdn.com/relative-to-date/lib/index.js --save
+bower install relative-to-date=https://unpkg.com/relative-to-date/lib/index.js --save
 ```
 
 
