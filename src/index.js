@@ -42,12 +42,14 @@ const UNITS = [
 function getUnitByName(unitName) {
   let unit;
 
-  for (let i = 0; i <= UNITS.length; i++) {
+  for (let i = 0; i <= UNITS.length;) {
     unit = UNITS[i];
 
     if (unit.name === unitName) {
       return unit;
     }
+
+    i += 1;
   }
 
   return undefined;

@@ -1,9 +1,9 @@
 {
   "extends": [
-    "defaults/configurations/airbnb/es6"
+    "airbnb-base"
   ],
   "env": {
-    
+
   },
   "parserOptions": {
     "ecmaVersion": 6,
