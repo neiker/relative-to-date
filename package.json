@@ -29,7 +29,6 @@
   "homepage": "https://github.com/neiker/relative-to-date",
   "dependencies": {},
   "devDependencies": {
-    "babel": "6.5.2",
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
     "babel-eslint": "7.0.0",
