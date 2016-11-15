@@ -55,9 +55,7 @@ function getUnitByName(unitName) {
   return undefined;
 }
 
-const REGEXP = new RegExp(
-  `^([0-9]+)\\s(${UNITS.map(unit => unit.name).join('|')})s?\\s(${SUFFIX_AGO}|${SUFFIX_FROM_NOW})$`
-);
+const REGEXP = new RegExp(`^([0-9]+)\\s(${UNITS.map(unit => unit.name).join('|')})s?\\s(${SUFFIX_AGO}|${SUFFIX_FROM_NOW})$`);
 
 function parser(input) {
   let date;
