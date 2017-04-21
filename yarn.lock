@@ -743,9 +743,13 @@ bluebird@2.9.24:
   version "2.9.24"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-2.9.24.tgz#14a2e75f0548323dc35aa440d92007ca154e967c"
 
-bluebird@3.3.4:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.3.4.tgz#f780fe43e1a7a6510f67abd7d0d79533a40ddde6"
+bluebird@3.4.6:
+  version "3.4.6"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.4.6.tgz#01da8d821d87813d158967e743d5fe6c62cf8c0f"
+
+bluebird@3.4.7:
+  version "3.4.7"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.4.7.tgz#f72d760be09b7f76d08ed8fae98b289a8d05fab3"
 
 boom@2.x.x:
   version "2.10.1"
@@ -814,6 +818,16 @@ chdir-promise@0.2.1:
     q "1.1.2"
     spots "0.3.0"
 
+chdir-promise@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/chdir-promise/-/chdir-promise-0.4.0.tgz#46dc602ed193197470140f152459a4382cf79974"
+  dependencies:
+    check-more-types "2.23.0"
+    debug "^2.3.3"
+    lazy-ass "1.5.0"
+    q "1.1.2"
+    spots "0.4.0"
+
 check-more-types@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/check-more-types/-/check-more-types-1.1.0.tgz#3d0e36cbfbe907b3e5ec0a14f6b256086452c216"
@@ -822,13 +836,9 @@ check-more-types@2.10.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/check-more-types/-/check-more-types-2.10.0.tgz#7cf576c20cb8b38d0e7db2981f8bba44f8cd17d3"
 
-check-more-types@2.15.0:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/check-more-types/-/check-more-types-2.15.0.tgz#8056adf376ba5088c69413c79ad62eb5881a6583"
-
-check-more-types@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/check-more-types/-/check-more-types-2.2.0.tgz#f5e2af8345d0aae617c4e3446e65fa353c7f46bb"
+check-more-types@2.23.0:
+  version "2.23.0"
+  resolved "https://registry.yarnpkg.com/check-more-types/-/check-more-types-2.23.0.tgz#6226264d30b1095aa1c0a5b874edbdd5d2d0a66f"
 
 check-more-types@2.3.0:
   version "2.3.0"
@@ -942,6 +952,10 @@ conventional-commit-message@1.1.0:
     lazy-ass "1.3.0"
     word-wrap "1.1.0"
 
+conventional-commit-types@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/conventional-commit-types/-/conventional-commit-types-2.1.0.tgz#45d860386c9a2e6537ee91d8a1b61bd0411b3d04"
+
 convert-source-map@^1.1.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.3.0.tgz#e9f3e9c6e2728efc2676696a70eb382f73106a67"
@@ -966,6 +980,17 @@ cz-conventional-changelog@1.1.5:
   dependencies:
     word-wrap "^1.0.3"
 
+cz-conventional-changelog@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/cz-conventional-changelog/-/cz-conventional-changelog-1.2.0.tgz#2bca04964c8919b23f3fd6a89ef5e6008b31b3f8"
+  dependencies:
+    conventional-commit-types "^2.0.0"
+    lodash.map "^4.5.1"
+    longest "^1.0.1"
+    pad-right "^0.2.2"
+    right-pad "^1.0.1"
+    word-wrap "^1.0.3"
+
 d3-helpers@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/d3-helpers/-/d3-helpers-0.3.0.tgz#4b31dce4a2121a77336384574d893fbed5fb293d"
@@ -987,6 +1012,18 @@ debug@2.2.0, debug@~2.2.0:
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
     ms "0.7.1"
+
+debug@2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.3.3.tgz#40c453e67e6e13c901ddec317af8986cda9eff8c"
+  dependencies:
+    ms "0.7.2"
+
+debug@2.6.0, debug@^2.3.3:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.0.tgz#bc596bcabe7617f11d9fa15361eded5608b8499b"
+  dependencies:
+    ms "0.7.2"
 
 debug@^2.1.1, debug@^2.2.0:
   version "2.3.2"
@@ -1407,41 +1444,43 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-ggit@1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/ggit/-/ggit-1.10.0.tgz#5b57b1eefec0212da6ed65fb2105a5140cec7dfc"
+ggit@1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/ggit/-/ggit-1.12.0.tgz#b4f65b9df44baa7625d50c8c9ae45553f4fe1c2d"
   dependencies:
+    bluebird "3.4.6"
     chdir-promise "0.2.1"
-    check-more-types "2.2.0"
+    check-more-types "2.23.0"
     cli-table "0.3.1"
     colors "1.1.2"
     commander "2.9.0"
     d3-helpers "0.3.0"
-    debug "2.2.0"
-    glob "6.0.1"
-    lazy-ass "1.1.0"
+    debug "2.3.3"
+    glob "7.1.1"
+    lazy-ass "1.5.0"
     lodash "3.10.1"
-    moment "2.12.0"
+    moment "2.17.0"
     optimist "0.6.1"
     q "2.0.3"
     quote "0.4.0"
     ramda "0.9.1"
 
-ggit@1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/ggit/-/ggit-1.7.1.tgz#c6b5531ff08a3a4fb3a8cf51c16b011026d77632"
+ggit@1.13.6:
+  version "1.13.6"
+  resolved "https://registry.yarnpkg.com/ggit/-/ggit-1.13.6.tgz#a91eeca4f12920ae58b9e34daa9a824b5e187c8e"
   dependencies:
-    chdir-promise "0.2.1"
-    check-more-types "2.2.0"
+    bluebird "3.4.7"
+    chdir-promise "0.4.0"
+    check-more-types "2.23.0"
     cli-table "0.3.1"
     colors "1.1.2"
     commander "2.9.0"
     d3-helpers "0.3.0"
-    debug "2.2.0"
-    glob "6.0.1"
-    lazy-ass "1.1.0"
+    debug "2.6.0"
+    glob "7.1.1"
+    lazy-ass "1.5.0"
     lodash "3.10.1"
-    moment "2.10.6"
+    moment "2.17.0"
     optimist "0.6.1"
     q "2.0.3"
     quote "0.4.0"
@@ -1460,16 +1499,6 @@ glob-parent@^2.0.0:
   dependencies:
     is-glob "^2.0.0"
 
-glob@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-6.0.1.tgz#16a89b94ac361b2a670a0a141a21ad51b438d21d"
-  dependencies:
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "2 || 3"
-    once "^1.3.0"
-    path-is-absolute "^1.0.0"
-
 glob@7.0.5:
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.0.5.tgz#b4202a69099bbb4d292a7c1b95b6682b67ebdc95"
@@ -1481,7 +1510,7 @@ glob@7.0.5:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.0, glob@^7.0.3, glob@^7.0.5:
+glob@7.1.1, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
   dependencies:
@@ -1492,11 +1521,7 @@ glob@^7.0.0, glob@^7.0.3, glob@^7.0.5:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-globals@^9.0.0:
-  version "9.13.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-9.13.0.tgz#d97706b61600d8dbe94708c367d3fdcf48470b8f"
-
-globals@^9.14.0:
+globals@^9.0.0, globals@^9.14.0:
   version "9.17.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.17.0.tgz#0c0ca696d9b9bb694d2e5470bd37777caad50286"
 
@@ -1874,17 +1899,13 @@ lazy-ass@0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/lazy-ass/-/lazy-ass-0.5.3.tgz#493e1d80198b798f79b72404e8af65f2f02a0065"
 
-lazy-ass@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/lazy-ass/-/lazy-ass-1.1.0.tgz#5a591bd53c2ee052cc517227f64c2798821d7f49"
-
 lazy-ass@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/lazy-ass/-/lazy-ass-1.3.0.tgz#7d0d14eef3ec9702c6f30c60ea81f1a8d3f900fb"
 
-lazy-ass@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/lazy-ass/-/lazy-ass-1.4.0.tgz#c4acfd59d65b9e6f25b05c439cb2f8fc2be34437"
+lazy-ass@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/lazy-ass/-/lazy-ass-1.5.0.tgz#ca15be243c7c475b8565cdbfa0f9c2f374f2a01d"
 
 levn@^0.3.0, levn@~0.3.0:
   version "0.3.0"
@@ -1944,6 +1965,10 @@ lodash.keys@^3.0.0:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
+lodash.map@^4.5.1:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
+
 lodash@3.10.1, lodash@^3.3.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
@@ -1951,6 +1976,10 @@ lodash@3.10.1, lodash@^3.3.1:
 lodash@^4.0.0, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.0"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.0.tgz#93f4466e5ab73e5a1f1216c34eea11535f0a8df5"
+
+longest@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
 loose-envify@^1.0.0:
   version "1.3.0"
@@ -1986,7 +2015,7 @@ mime-types@^2.1.12, mime-types@~2.1.7:
   dependencies:
     mime-db "~1.24.0"
 
-"minimatch@2 || 3", minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3:
+minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.3.tgz#2a4e4090b96b2db06a9d7df01055a62a77c9b774"
   dependencies:
@@ -2022,13 +2051,9 @@ mocha@3.1.x:
     mkdirp "0.5.1"
     supports-color "3.1.2"
 
-moment@2.10.6:
-  version "2.10.6"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.10.6.tgz#6cb21967c79cba7b0ca5e66644f173662b3efa77"
-
-moment@2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.12.0.tgz#dc2560d19838d6c0731b1a6afa04675264d360d6"
+moment@2.17.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.17.0.tgz#a4c292e02aac5ddefb29a6eed24f51938dd3b74f"
 
 ms@0.7.1:
   version "0.7.1"
@@ -2160,6 +2185,12 @@ output-file-sync@^1.1.0:
     mkdirp "^0.5.1"
     object-assign "^4.1.0"
 
+pad-right@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/pad-right/-/pad-right-0.2.2.tgz#6fbc924045d244f2a2a244503060d3bfc6009774"
+  dependencies:
+    repeat-string "^1.5.2"
+
 parse-glob@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/parse-glob/-/parse-glob-3.0.4.tgz#b2c376cfb11f35513badd173ef0bb6e3a388391c"
@@ -2217,24 +2248,24 @@ pop-iterate@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/pop-iterate/-/pop-iterate-1.0.1.tgz#ceacfdab4abf353d7a0f2aaa2c1fc7b3f9413ba3"
 
-pre-git@3.10.x:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/pre-git/-/pre-git-3.10.0.tgz#cb13cbf8f8656cf33fb8eaabc84a2f6d6391c5eb"
+pre-git@3.14.x:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/pre-git/-/pre-git-3.14.0.tgz#abe7d6411febe8c908a6a89a94f9ae02a63aa81f"
   dependencies:
-    bluebird "3.3.4"
+    bluebird "3.4.7"
     chalk "1.1.3"
-    check-more-types "2.15.0"
+    check-more-types "2.23.0"
     conventional-commit-message "1.1.0"
-    cz-conventional-changelog "1.1.5"
-    debug "2.2.0"
-    ggit "1.10.0"
+    cz-conventional-changelog "1.2.0"
+    debug "2.6.0"
+    ggit "1.13.6"
     inquirer "0.12.0"
-    lazy-ass "1.4.0"
+    lazy-ass "1.5.0"
     require-relative "0.8.7"
     shelljs "0.6.0"
-    simple-commit-message "2.1.1"
-    validate-commit-msg "2.5.0"
-    word-wrap "1.1.0"
+    simple-commit-message "2.2.1"
+    validate-commit-msg "2.11.1"
+    word-wrap "1.2.1"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
@@ -2300,30 +2331,7 @@ rc@~1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~1.0.4"
 
-"readable-stream@^2.0.0 || ^1.1.13", readable-stream@~2.1.4:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.1.5.tgz#66fa8b720e1438b364681f2ad1a63c618448c9d0"
-  dependencies:
-    buffer-shims "^1.0.0"
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "~1.0.0"
-    process-nextick-args "~1.0.6"
-    string_decoder "~0.10.x"
-    util-deprecate "~1.0.1"
-
-readable-stream@^2.0.2:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "~1.0.0"
-    process-nextick-args "~1.0.6"
-    string_decoder "~0.10.x"
-    util-deprecate "~1.0.1"
-
-readable-stream@^2.2.2:
+"readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2, readable-stream@^2.2.2:
   version "2.2.9"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.9.tgz#cf78ec6f4a6d1eb43d26488cac97f042e74b7fc8"
   dependencies:
@@ -2333,6 +2341,18 @@ readable-stream@^2.2.2:
     isarray "~1.0.0"
     process-nextick-args "~1.0.6"
     string_decoder "~1.0.0"
+    util-deprecate "~1.0.1"
+
+readable-stream@~2.1.4:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.1.5.tgz#66fa8b720e1438b364681f2ad1a63c618448c9d0"
+  dependencies:
+    buffer-shims "^1.0.0"
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "~1.0.0"
+    process-nextick-args "~1.0.6"
+    string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
 
 readdirp@^2.0.0:
@@ -2471,6 +2491,10 @@ restore-cursor@^1.0.1:
     exit-hook "^1.0.0"
     onetime "^1.0.0"
 
+right-pad@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/right-pad/-/right-pad-1.0.1.tgz#8ca08c2cbb5b55e74dafa96bf7fd1a27d568c8d0"
+
 rimraf@2, rimraf@^2.2.8, rimraf@~2.5.1, rimraf@~2.5.4:
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
@@ -2527,16 +2551,16 @@ signal-exit@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.1.tgz#5a4c884992b63a7acd9badb7894c3ee9cfccad81"
 
-simple-commit-message@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/simple-commit-message/-/simple-commit-message-2.1.1.tgz#bf365812160222439cb7308b488fa870cf087d15"
+simple-commit-message@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/simple-commit-message/-/simple-commit-message-2.2.1.tgz#672cc734ea4a880aba2b380d1f7b0d83afd901bb"
   dependencies:
     check-more-types "2.10.0"
-    ggit "1.7.1"
+    ggit "1.12.0"
     hr "0.1.3"
     inquirer "0.11.1"
     inquirer-confirm "0.2.2"
-    lazy-ass "1.3.0"
+    lazy-ass "1.5.0"
     semver "5.1.0"
     word-wrap "1.1.0"
 
@@ -2567,6 +2591,10 @@ source-map@^0.5.0, source-map@^0.5.3:
 spots@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/spots/-/spots-0.3.0.tgz#b569114dd32c508e220b9f6bac1d088cddf7e0d6"
+
+spots@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/spots/-/spots-0.4.0.tgz#01eec5efc143669d9d3a20e3eec8b8cbd9842df6"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
@@ -2750,10 +2778,11 @@ v8flags@^2.0.10:
   dependencies:
     user-home "^1.1.1"
 
-validate-commit-msg@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/validate-commit-msg/-/validate-commit-msg-2.5.0.tgz#a7d0a68aa3917171b560664689a2ac59c25908b6"
+validate-commit-msg@2.11.1:
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/validate-commit-msg/-/validate-commit-msg-2.11.1.tgz#c8f86643ca03b26da1b4f3e37d7f6e659fbc34ca"
   dependencies:
+    conventional-commit-types "^2.0.0"
     findup "0.1.5"
     semver-regex "1.0.0"
 
@@ -2776,6 +2805,10 @@ wide-align@^1.1.0:
 word-wrap@1.1.0, word-wrap@^1.0.3:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.1.0.tgz#356153d61d10610d600785c5d701288e0ae764a6"
+
+word-wrap@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.1.tgz#248f459b465d179a17bc407c854d3151d07e45d8"
 
 wordwrap@~0.0.2:
   version "0.0.3"
