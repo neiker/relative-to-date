@@ -37,7 +37,7 @@
     "babel-preset-stage-2": "6.24.x",
     "eslint": "3.19.x",
     "eslint-config-airbnb-base": "11.1.x",
-    "eslint-plugin-import": "2.2.x",
+    "eslint-plugin-import": "2.3.0",
     "mocha": "3.2.x",
     "pre-git": "3.14.x"
   },
